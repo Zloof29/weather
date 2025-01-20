@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import "./Page404.css";
 
 export function Page404(): JSX.Element {

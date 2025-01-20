@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import "./Header.css";
 
 export function Header(): JSX.Element {
