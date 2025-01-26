@@ -1,5 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { UserModel } from "../Models/UserModel";
+import { initUser, logoutUser } from "./reducers";
 
 export type AppState = {
   user: UserModel;
@@ -8,7 +9,7 @@ export type AppState = {
 const userSlice = createSlice({
   name: "user",
   initialState: null,
-  reducers: {},
+  reducers: { initUser, logoutUser },
 });
 
 export const userAction = userSlice.actions;
