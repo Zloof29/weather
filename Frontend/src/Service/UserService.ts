@@ -1,9 +1,9 @@
-import { jwtDecode } from "jwt-decode";
 import { UserModel } from "../Models/UserModel";
 import { store, userAction } from "../Redux/store";
 import axios from "axios";
 import { appConfig } from "../Utils/AppConfig";
 import { CredentialsModel } from "../Models/CredentialsModel";
+import { jwtDecode } from "jwt-decode";
 
 class UserService {
   public constructor() {
